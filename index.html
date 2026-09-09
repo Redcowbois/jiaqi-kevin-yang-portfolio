@@ -3,201 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Jiaqi Kevin Yang - Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #fcfcfc;
-            --text-color: #2b2b2b;
-            --accent-color: #005bb5;
-            --secondary-text: #666666;
-            --border-color: #eaeaea;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        /* Header Restructure */
-        header {
-            margin-bottom: 3rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-        }
-
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-links {
-            font-size: 0.9rem;
-            color: var(--secondary-text);
-        }
-
-        .contact-links a {
-            color: var(--secondary-text);
-            margin-right: 0.4rem;
-        }
-
-        .contact-links a:hover {
-            color: var(--accent-color);
-        }
-
-        h1, h2, h3 {
-            font-weight: 600;
-            margin-top: 2rem;
-            color: #111;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        nav a {
-            margin-left: 1.5rem;
-            text-decoration: none;
-            color: var(--secondary-text);
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Resume Button Styling */
-        .btn {
-            background-color: var(--accent-color);
-            color: white !important;
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #00458a;
-            text-decoration: none;
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 4rem;
-        }
-
-        .project {
-            margin-bottom: 3.5rem;
-        }
-
-        .project-img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 1rem;
-            background-color: var(--border-color);
-        }
-
-        /* Slideshow Container */
-        .slideshow-wrapper {
-            position: relative;
-            margin-bottom: 1rem;
-        }
-
-        .slideshow {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-            border-radius: 6px;
-        }
-
-        .slideshow::-webkit-scrollbar {
-            display: none;
-        }
-
-        .slideshow img {
-            flex: 0 0 100%;
-            scroll-snap-align: start;
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
-            background-color: var(--border-color);
-        }
-
-        /* Slideshow Navigation Buttons */
-        .slideshow-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-
-        .slideshow-controls button {
-            pointer-events: auto;
-            background: rgba(0, 0, 0, 0.4);
-            color: white;
-            border: none;
-            padding: 0.5rem 0.75rem;
-            cursor: pointer;
-            border-radius: 4px;
-            margin: 0 0.5rem;
-            font-size: 1.2rem;
-            transition: background 0.2s;
-        }
-
-        .slideshow-controls button:hover {
-            background: rgba(0, 0, 0, 0.75);
-        }
-
-        .project h3 {
-            margin-top: 0;
-            margin-bottom: 0.2rem;
-            font-size: 1.25rem;
-        }
-
-        .project-tech {
-            font-size: 0.85rem;
-            color: var(--secondary-text);
-            margin-bottom: 0.75rem;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--secondary-text);
-        }
-    </style>
 </head>
 <body>
 
@@ -223,11 +30,17 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Hi, I'm Jiaqi Kevin Yang[cite: 1], an MSc in Computer Science student at McGill University[cite: 1]. I previously completed my BSc in Software Engineering at McGill[cite: 1] alongside a student exchange at Hong Kong Polytechnic University[cite: 1]. Professionally, I have worked as a QA Automation Intern at dormakaba where I integrated testing frameworks into CI/CD pipelines[cite: 1], and I currently mentor over 200 students as a Teaching Assistant in computer architecture and assembly[cite: 1].
+                Hi, I'm Jiaqi Kevin Yang. I am currently completing a MSc in Computer Science at McGill University. I previously completed my BSc in Software Engineering at McGill. During my undergraduate years, I also did a student exchange semester at Hong Kong Polytechnic University.
             </p>
             <p>
-                When I step away from the keyboard, I'm usually out exploring the world. I love long-distance bikepacking (recently completing a multi-stop tour across Hokkaido), alpine trekking in places like Kyrgyzstan and Mount Hua, and practicing mobile astrophotography. To unwind, you can usually find me at the arcade playing rhythm games like maimai DX or Pump It Up.
+                Professionally, I have worked as a QA Automation intern at dormakaba where I worked on expanding test suites for a smart lock product. I currently mentor over 200 students as a Teaching Assistant in computer architecture and assembly at McGill University.	
             </p>
+            <p>
+                I am a software engineer proficient in a diverse set of programming languages, including Java, Python, C/C++, C#, and JavaScript/TypeScript. My technical knowledge covers backend and infrastructure technologies alongside Agile development practices. Additionally, I have a strong foundation in core computer science principles like distributed systems, concurrent programming, test-driven development and software design. 
+            </p>
+            <p>
+                When I step away from the keyboard, I'm usually out working up a sweat. I love long-distance bikepacking (recently completing a tour across most of Hokkaido) and hiking a good mountain. I am also a big fan of badminton and bouldering.
+            </p> 
         </section>
 
         <section id="projects">
