@@ -4,17 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiaqi Kevin Yang - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #2b2b2b;
+            --accent-color: #005bb5;
+            --secondary-text: #666666;
+            --border-color: #eaeaea;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
 
+        /* Header Restructure */
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-links {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        .contact-links a {
+            color: var(--secondary-text);
+            margin-right: 0.4rem;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent-color);
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            margin-top: 2rem;
+            color: #111;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Resume Button Styling */
+        .btn {
+            background-color: var(--accent-color);
+            color: white !important;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #00458a;
+            text-decoration: none;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        .project {
+            margin-bottom: 3.5rem;
+        }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            background-color: var(--border-color);
+        }
+
+        /* Slideshow Container */
+        .slideshow-wrapper {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .slideshow {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            border-radius: 6px;
+        }
+
+        .slideshow::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slideshow img {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            background-color: var(--border-color);
+        }
+
+        /* Slideshow Navigation Buttons */
+        .slideshow-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .slideshow-controls button {
+            pointer-events: auto;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            border: none;
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            transition: background 0.2s;
+        }
+
+        .slideshow-controls button:hover {
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            margin-bottom: 0.2rem;
+            font-size: 1.25rem;
+        }
+
+        .project-tech {
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+            margin-bottom: 0.75rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+        }
+    </style>
+</head>
 <body>
 
     <header>
-        <h1>Jiaqi Kevin Yang</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-        </nav>
+        <div class="header-top">
+            <h1>Jiaqi Kevin Yang</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <!-- target="_blank" opens the link in a new tab -->
+                <a href="JiaqiYangResume.pdf" target="_blank" class="btn">View Resume</a>
+            </nav>
+        </div>
+        <div class="contact-links">
+            <a href="mailto:jiaqi.kevin.yang@outlook.com">jiaqi.kevin.yang@outlook.com</a> •
+            <a href="tel:+15145684803">(514) 568-4803</a> •
+            <a href="https://github.com/Redcowbois" target="_blank">GitHub</a> •
+            <a href="https://www.linkedin.com/in/jiaqi-kevin-yang/" target="_blank">LinkedIn</a>
+        </div>
     </header>
 
     <main>
@@ -45,7 +247,6 @@
                 <p>Architected a domain-specific language using Langium to create a hierarchical task network that defines AI behaviors, character roles, perception cues, and probabilistic decision trees[cite: 1]. Developed a model-to-text code generator in TypeScript that outputs C# classes integrated with the Unity API[cite: 1].</p>
             </div>
 
-            <!-- Slideshow Project Example 1 -->
             <div class="project">
                 <div class="slideshow-wrapper">
                     <div class="slideshow">
@@ -77,7 +278,6 @@
                 <p>Architected and deployed a custom proxy network using a self-hosted Virtual Private Server. Configured advanced routing protocols to ensure secure, high-speed, and reliable connectivity, pairing the server setup with customized Android client applications.</p>
             </div>
 
-            <!-- Slideshow Project Example 2 -->
             <div class="project">
                 <div class="slideshow-wrapper">
                     <div class="slideshow">
@@ -106,7 +306,7 @@
     </main>
 
     <footer>
-        <p>&copy; Jiaqi Kevin Yang</p>
+        <p>&copy; 2026 Jiaqi Kevin Yang[cite: 1]. Built without bloat.</p>
     </footer>
 
     <script>

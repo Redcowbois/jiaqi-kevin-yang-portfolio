@@ -17,13 +17,32 @@ body {
     padding: 2rem;
 }
 
+/* Header Restructure */
 header {
     margin-bottom: 3rem;
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.header-top {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-links {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+}
+
+.contact-links a {
+    color: var(--secondary-text);
+    margin-right: 0.4rem;
+}
+
+.contact-links a:hover {
+    color: var(--accent-color);
 }
 
 h1, h2, h3 {
@@ -37,6 +56,11 @@ h1 {
     margin: 0;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav a {
     margin-left: 1.5rem;
     text-decoration: none;
@@ -46,6 +70,21 @@ nav a {
 
 nav a:hover {
     color: var(--accent-color);
+}
+
+/* Resume Button Styling */
+.btn {
+    background-color: var(--accent-color);
+    color: white !important;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #00458a;
+    text-decoration: none;
 }
 
 a {
@@ -65,7 +104,6 @@ section {
     margin-bottom: 3.5rem;
 }
 
-/* Standard Single Image */
 .project-img {
     width: 100%;
     height: auto;
@@ -87,12 +125,12 @@ section {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    scrollbar-width: none;
     border-radius: 6px;
 }
 
 .slideshow::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in Chrome/Safari */
+    display: none;
 }
 
 .slideshow img {
@@ -112,7 +150,7 @@ section {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-    pointer-events: none; /* Lets clicks pass through the middle */
+    pointer-events: none;
 }
 
 .slideshow-controls button {
