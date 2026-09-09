@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiaqi Kevin Yang - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Jiaqi Kevin Yang</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Jiaqi Kevin Yang[cite: 1], an MSc in Computer Science student at McGill University[cite: 1]. I previously completed my BSc in Software Engineering at McGill[cite: 1] alongside a student exchange at Hong Kong Polytechnic University[cite: 1]. Professionally, I have worked as a QA Automation Intern at dormakaba where I integrated testing frameworks into CI/CD pipelines[cite: 1], and I currently mentor over 200 students as a Teaching Assistant in computer architecture and assembly[cite: 1].
+            </p>
+            <p>
+                When I step away from the keyboard, I'm usually out exploring the world. I love long-distance bikepacking (recently completing a multi-stop tour across Hokkaido), alpine trekking in places like Kyrgyzstan and Mount Hua, and practicing mobile astrophotography. To unwind, you can usually find me at the arcade playing rhythm games like maimai DX or Pump It Up.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <img src="images/c-compiler.webp" alt="Abstract Syntax Tree Visualization" loading="lazy" class="project-img">
+                <h3>C Compiler[cite: 1]</h3>
+                <div class="project-tech">Java | MIPS Assembly | Git[cite: 1]</div>
+                <p>Built a compiler in Java that translated the C programming language into MIPS assembly[cite: 1]. Refactored C grammar to LL(k) and developed a recursive-descent parser to generate abstract syntax trees[cite: 1]. Engineered multi-pass semantic analysis enforcing strong typing and implemented a code generator using Chaitin's graph coloring to allocate registers[cite: 1].</p>
+            </div>
+
+            <div class="project">
+                <img src="images/npc-behavior.webp" alt="Hierarchical Task Network Graph" loading="lazy" class="project-img">
+                <h3>Custom NPC Behavior Language[cite: 1]</h3>
+                <div class="project-tech">TypeScript | C# | Unity API[cite: 1]</div>
+                <p>Architected a domain-specific language using Langium to create a hierarchical task network that defines AI behaviors, character roles, perception cues, and probabilistic decision trees[cite: 1]. Developed a model-to-text code generator in TypeScript that outputs C# classes integrated with the Unity API[cite: 1].</p>
+            </div>
+
+            <!-- Slideshow Project Example 1 -->
+            <div class="project">
+                <div class="slideshow-wrapper">
+                    <div class="slideshow">
+                        <img src="images/smart-dumbbell-1.webp" alt="Smart Dumbbell Hardware Setup" loading="lazy">
+                        <img src="images/smart-dumbbell-2.webp" alt="Computer Vision Tracking Overlay" loading="lazy">
+                        <img src="images/smart-dumbbell-3.webp" alt="Real-time Analytics Dashboard" loading="lazy">
+                    </div>
+                    <div class="slideshow-controls">
+                        <button onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                </div>
+                <h3>Smart Dumbbell[cite: 1]</h3>
+                <div class="project-tech">Python | Flask | MQTT | Computer Vision[cite: 1]</div>
+                <p>Engineered a multithreaded Flask backend to process concurrent MQTT hardware streams, a computer vision pipeline, and real-time workout analytics[cite: 1]. Led backend and systems integration as a technical lead, coordinating hardware and software teams[cite: 1].</p>
+            </div>
+
+            <div class="project">
+                <img src="images/middleware.webp" alt="Distributed System Architecture Diagram" loading="lazy" class="project-img">
+                <h3>Distributed Middleware Server[cite: 1]</h3>
+                <div class="project-tech">Java | TCP Sockets | Distributed Systems[cite: 1]</div>
+                <p>Built a distributed travel reservation system in Java with a middleware server to handle concurrent client requests and route them to replicated backend resource managers[cite: 1]. Developed non-blocking communication protocol using TCP sockets, enabling asynchronous message passing[cite: 1].</p>
+            </div>
+
+            <div class="project">
+                <img src="images/proxy-network.webp" alt="Server Routing Terminal" loading="lazy" class="project-img">
+                <h3>Self-Hosted Proxy Infrastructure</h3>
+                <div class="project-tech">V2Ray | VLESS | Hysteria | Vultr VPS</div>
+                <p>Architected and deployed a custom proxy network using a self-hosted Virtual Private Server. Configured advanced routing protocols to ensure secure, high-speed, and reliable connectivity, pairing the server setup with customized Android client applications.</p>
+            </div>
+
+            <!-- Slideshow Project Example 2 -->
+            <div class="project">
+                <div class="slideshow-wrapper">
+                    <div class="slideshow">
+                        <img src="images/astro-1.webp" alt="Night Sky Star Trails" loading="lazy">
+                        <img src="images/astro-2.webp" alt="Leading Lines Composition" loading="lazy">
+                        <img src="images/astro-3.webp" alt="Scale Composition against Mountains" loading="lazy">
+                    </div>
+                    <div class="slideshow-controls">
+                        <button onclick="moveSlide(this, -1)">&#10094;</button>
+                        <button onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                </div>
+                <h3>Mobile Astrophotography Gallery</h3>
+                <div class="project-tech">Expert RAW | Image Processing | HTML/CSS</div>
+                <p>A curated digital gallery displaying long-exposure night sky photography. Focuses on capturing star trailing, scale composition, and leading lines, shot entirely on mobile hardware using manual Pro mode settings.</p>
+            </div>
+
+            <div class="project">
+                <img src="images/bikepacking.webp" alt="Cycling Route Telemetry" loading="lazy" class="project-img">
+                <h3>Bikepacking Telemetry Tracker</h3>
+                <div class="project-tech">Strava API | Data Visualization</div>
+                <p>A mapping and tracking dashboard built to analyze long-distance cycling data. Originally conceptualized to log a multi-day journey from Sapporo to Cape Soya, it visualizes elevation changes, pacing, and geographic milestones.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Jiaqi Kevin Yang</p>
+    </footer>
+
+    <script>
+        function moveSlide(button, direction) {
+            const wrapper = button.parentElement.parentElement;
+            const slideshow = wrapper.querySelector('.slideshow');
+            const scrollAmount = slideshow.clientWidth;
+            slideshow.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
