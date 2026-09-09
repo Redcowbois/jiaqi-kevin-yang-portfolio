@@ -102,6 +102,14 @@ section {
 
 .project {
     margin-bottom: 3.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .project-img {
@@ -112,6 +120,23 @@ section {
     border-radius: 6px;
     margin-bottom: 1rem;
     background-color: var(--border-color);
+}
+
+.project-date {
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.project ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.2rem;
+}
+
+.project li {
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 /* Slideshow Container */

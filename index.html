@@ -46,51 +46,58 @@
             <h2>Projects</h2>
 
             <div class="project">
-                <img src="images/c-compiler.webp" alt="Abstract Syntax Tree Visualization" loading="lazy" class="project-img">
-                <h3>C Compiler[cite: 1]</h3>
-                <div class="project-tech">Java | MIPS Assembly | Git[cite: 1]</div>
-                <p>Built a compiler in Java that translated the C programming language into MIPS assembly[cite: 1]. Refactored C grammar to LL(k) and developed a recursive-descent parser to generate abstract syntax trees[cite: 1]. Engineered multi-pass semantic analysis enforcing strong typing and implemented a code generator using Chaitin's graph coloring to allocate registers[cite: 1].</p>
+                <h3>Proxy Infrastructure</h3>
+                <div class="project-date">Jul 2026 - Aug 2026</div>
+                <div class="project-tech">V2Ray | VLESS | Hysteria </div>
+                <ul>
+                    <li>Deployed a remote VPS proxy server using modern bypass protocols like VLESS and Hysteria.</li>
+                    <li>Configured custom network routing and TLS masking to maintain unrestricted internet access across restricted networks.</li>
+                </ul>
             </div>
 
             <div class="project">
-                <img src="images/npc-behavior.webp" alt="Hierarchical Task Network Graph" loading="lazy" class="project-img">
-                <h3>Custom NPC Behavior Language[cite: 1]</h3>
-                <div class="project-tech">TypeScript | C# | Unity API[cite: 1]</div>
-                <p>Architected a domain-specific language using Langium to create a hierarchical task network that defines AI behaviors, character roles, perception cues, and probabilistic decision trees[cite: 1]. Developed a model-to-text code generator in TypeScript that outputs C# classes integrated with the Unity API[cite: 1].</p>
+                <h3>C Compiler</h3>
+                <div class="project-date">Jan 2026 - May 2026</div>
+                <div class="project-tech">Java | MIPS Assembly | C </div>
+                <ul>
+                    <li>Developed a compiler in Java that translated the C programming language into MIPS assembly</li>
+                    <li>Refactored C grammar to LL(k) and developed a recursive-descent parser to generate abstract syntax trees</li>
+                    <li>Wrote a custom tokenizer and lexer to facilitate the parsing process</li>
+                    <li>Engineered multi-pass semantic analysis enforcing strong typing, nested scoping and struct alignment </li>
+                    <li>Implemented a code generator using Chaitin's graph coloring to allocate registers</li>
+                    <li>Generated target-specific MIPS assembly handling function calling conventions, stack frame layout management, and jump offsets.</li>
+                </ul>
             </div>
 
             <div class="project">
-                <div class="slideshow-wrapper">
-                    <div class="slideshow">
-                        <img src="images/smart-dumbbell-1.webp" alt="Smart Dumbbell Hardware Setup" loading="lazy">
-                        <img src="images/smart-dumbbell-2.webp" alt="Computer Vision Tracking Overlay" loading="lazy">
-                        <img src="images/smart-dumbbell-3.webp" alt="Real-time Analytics Dashboard" loading="lazy">
-                    </div>
-                    <div class="slideshow-controls">
-                        <button onclick="moveSlide(this, -1)">&#10094;</button>
-                        <button onclick="moveSlide(this, 1)">&#10095;</button>
-                    </div>
-                </div>
-                <h3>Smart Dumbbell[cite: 1]</h3>
+                <h3>Custom NPC Behavior Language</h3>
+                <div class="project-date">Nov 2025 - Apr 2026</div>
+                <div class="project-tech">TypeScript | C# | Unity API | Langium | Domain-Specific Language</div>
+                <ul>
+                    <li>Engineering a heirarchical task network based NPC AI framework</li>
+                    <li>Designed a domain-specific language (DSL) for defining NPC behaviors in Unity, enabling game designers to script complex interactions without programming knowledge</li>
+                    <li>Implemented a model-to-text TypeScript-based parser and interpreter for the DSL, integrating it with Unity's C# API to control NPC actions and responses</li>
+                    <li>Developed a real-time debugging tool within Unity to visualize NPC state transitions and behavior execution</li>
+                    <li>Implemented semantic analysis rules to statically validate correctness before compile time</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Smart Dumbbell</h3>
                 <div class="project-tech">Python | Flask | MQTT | Computer Vision[cite: 1]</div>
                 <p>Engineered a multithreaded Flask backend to process concurrent MQTT hardware streams, a computer vision pipeline, and real-time workout analytics[cite: 1]. Led backend and systems integration as a technical lead, coordinating hardware and software teams[cite: 1].</p>
             </div>
 
             <div class="project">
-                <img src="images/middleware.webp" alt="Distributed System Architecture Diagram" loading="lazy" class="project-img">
                 <h3>Distributed Middleware Server[cite: 1]</h3>
                 <div class="project-tech">Java | TCP Sockets | Distributed Systems[cite: 1]</div>
                 <p>Built a distributed travel reservation system in Java with a middleware server to handle concurrent client requests and route them to replicated backend resource managers[cite: 1]. Developed non-blocking communication protocol using TCP sockets, enabling asynchronous message passing[cite: 1].</p>
             </div>
 
             <div class="project">
-                <img src="images/proxy-network.webp" alt="Server Routing Terminal" loading="lazy" class="project-img">
-                <h3>Self-Hosted Proxy Infrastructure</h3>
-                <div class="project-tech">V2Ray | VLESS | Hysteria | Vultr VPS</div>
-                <p>Architected and deployed a custom proxy network using a self-hosted Virtual Private Server. Configured advanced routing protocols to ensure secure, high-speed, and reliable connectivity, pairing the server setup with customized Android client applications.</p>
-            </div>
-
-            <div class="project">
+                <h3>Mobile Astrophotography Gallery</h3>
+                <div class="project-tech">Expert RAW | Image Processing | HTML/CSS</div>
+                <p>A curated digital gallery displaying long-exposure night sky photography. Focuses on capturing star trailing, scale composition, and leading lines, shot entirely on mobile hardware using manual Pro mode settings.</p>
                 <div class="slideshow-wrapper">
                     <div class="slideshow">
                         <img src="images/astro-1.webp" alt="Night Sky Star Trails" loading="lazy">
@@ -102,12 +109,9 @@
                         <button onclick="moveSlide(this, 1)">&#10095;</button>
                     </div>
                 </div>
-                <h3>Mobile Astrophotography Gallery</h3>
-                <div class="project-tech">Expert RAW | Image Processing | HTML/CSS</div>
-                <p>A curated digital gallery displaying long-exposure night sky photography. Focuses on capturing star trailing, scale composition, and leading lines, shot entirely on mobile hardware using manual Pro mode settings.</p>
             </div>
 
-            <div class="project">
+            <div class="project:last-child">
                 <img src="images/bikepacking.webp" alt="Cycling Route Telemetry" loading="lazy" class="project-img">
                 <h3>Bikepacking Telemetry Tracker</h3>
                 <div class="project-tech">Strava API | Data Visualization</div>
@@ -118,7 +122,7 @@
     </main>
 
     <footer>
-        <p>&copy; Jiaqi Kevin Yang</p>
+        <p>Jiaqi Kevin Yang</p>
     </footer>
 
     <script>
